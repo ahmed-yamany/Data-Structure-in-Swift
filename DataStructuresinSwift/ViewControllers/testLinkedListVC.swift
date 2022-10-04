@@ -19,6 +19,21 @@ class testLinkedListVC: UIViewController {
         node2.next = node3
         
         print(node1)
+        
+        
+        
+        var list = LinkedList<Int>()
+        list.push(6)
+        list.push(7)
+        list.push(8)
+        
+        print(list)
+        list.append(9)
+        list.append(10)
+        print(list)
+        list.insert(value: 5, at: 3)
+        print(list)
+        
     }
 
 
