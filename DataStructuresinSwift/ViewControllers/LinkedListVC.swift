@@ -7,7 +7,7 @@
 
 import UIKit
 
-class testLinkedListVC: UIViewController {
+class LinkedListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,11 @@ class testLinkedListVC: UIViewController {
         list.append(10)
         print(list)
         list.insert(value: 5, at: 3)
+        print(list)
+        
+        
+//        list.pop()
+        list.remove(at: 3)
         print(list)
         
     }

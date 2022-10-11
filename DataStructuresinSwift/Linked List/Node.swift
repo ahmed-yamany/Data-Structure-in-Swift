@@ -8,13 +8,16 @@
 import Foundation
 
 public class Node<Value>{
-    var value: Value
-    var next: Node?
+    // Nodes have two responsibilities:
+    var value: Value    // Hold a value.
+    var next: Node?     // Hold a reference to the next node. A nil value represents the end of the list
     init(value: Value, next: Node? = nil) {
         self.value = value
         self.next = next
     }
 }
+
+
 
 extension Node: CustomStringConvertible{
     public var description: String {
